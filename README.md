@@ -17,7 +17,7 @@ A PHP session handler that uses memcached to store session with multiple servers
     include('MemcachedSession.php');
     
     // set memcached session handler
-    MemcacheSession::config(array(
+    MemcachedSession::config(array(
         'lifetime'      => 0,     // session lifetime in seconds, by default session.gc_maxlifetime php config
         'random_read'   => true,  // when true the server chosen reading will be random, if not will try with the first in the list
         'replicate'     => true,  // will copy the same data in all servers
